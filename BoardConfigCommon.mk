@@ -13,13 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := device/samsung/m31-common
+COMMON_PATH := device/samsung/universal9610-common
 
 ## Include path
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 ## Inherit proprietary vendor configuartion
-include vendor/samsung/m31-common/BoardConfigVendor.mk
+include vendor/samsung/universal9610-common/BoardConfigVendor.mk
 
 ## Architecture
 TARGET_ARCH := arm64
@@ -90,7 +90,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/samsung/m31
+TARGET_KERNEL_SOURCE := kernel/samsung/$(TARGET_DEVICE)
 
 ## Keymaster
 TARGET_KEYMASTER_VARIANT := samsung

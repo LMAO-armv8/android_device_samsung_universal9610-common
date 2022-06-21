@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter m31, $(TARGET_DEVICE)),)
+ifneq ($(filter m31 m21 f41 a51 m31s, $(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/m31-common
+COMMON_PATH := device/samsung/universal9610-common
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/universal9610/universal9610-vendor.mk)
